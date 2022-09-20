@@ -1,0 +1,10 @@
+
+
+Module 25{
+    ==> event.stopPropagation() method will stop bubble.
+    ==> event.stopEmmediatePropagation() method will stop exact particular propagation.
+}
+
+Model 26{
+    ==> always remember to use .value to get the text from an input field
+}

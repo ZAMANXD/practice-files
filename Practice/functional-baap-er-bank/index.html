@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>Baap Er Bank Ltd</title>
+
+    <!-- stylesheet link -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- tailwind libary CDN link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <!-- heading section -->
+    <header>
+        <h1 class="font-semibold mt-7 text-5xl text-center">FUNCTIONAL <span class="text-violet-600">BAAP ER BANK</span>
+        </h1>
+    </header>
+
+    <!-- main section -->
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+                <div class="bg-yellow-400 p-8 rounded-md">
+                    <h2 class="text-3xl text-white">Diposit</h4>
+                        <h4 class="text-2xl text-white">$<span id="diposit-total">00</span>
+                    </h2>
+                </div>
+                <div class="bg-green-400 p-8 rounded-md">
+                    <h2 class="text-3xl text-white">Balance</h2>
+                    <h4 class="text-2xl text-white">$<span id="balance-total">1200</span></h4>
+                </div>
+                <div class="bg-blue-400 p-8 rounded-md">
+                    <h2 class="text-3xl text-white">Withdraw</h2>
+                    <h4 class="text-2xl text-white">$<span id="withdraw-total">00</span></h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diposit and Withdraw section -->
+        <section class="mt-3">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class="bg-fuchsia-400 p-8 rounded-md">
+                    <h4 class="text-3xl text-white mb-4">Make A Diposit</h4>
+                    <input class="w-9/12 block mb-3 py-2 px-4 rounded-md" type="text" name="" id="diposit-field"
+                        placeholder="Enter Amount to Diposit">
+                    <button id="btn-diposit" type="submit"
+                        class="bg-amber-400 hover:bg-sky-700 py-2 px-8 text-white rounded-md font-medium">Diposit
+                    </button>
+                </div>
+                <div class="bg-sky-400 p-8 rounded-md">
+                    <h4 class="text-3xl text-white mb-4">Withdraw Funds</h4>
+                    <input class="w-9/12 block mb-3 py-2 px-4 rounded-md" type="text" name="" id="withdraw-field"
+                        placeholder="Enter Amount to Withdraw">
+                    <button id="btn-withdraw" type="submit"
+                        class="bg-amber-400 hover:bg-sky-700 py-2 px-8 text-white rounded-md font-medium">Withdraw
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- js script link -->
+    <script src="./js/diposit.js"></script>
+    <script src="./js/withdraw.js"></script>
+    <script src="./js/utilities.js"></script>
+</body>
+</html>
